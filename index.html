@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OnDev Solutions Components</title>
+
+    <link rel="stylesheet" href="dist/css/bulma.css">
+
+    <style>
+        body {
+            padding-top: 30px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="root" class="container">
+
+        <ondev-tabs>
+            <ondev-tab name="Pictures" :selected="true">
+                <h1>Doloremque laborum vel sunt.</h1>
+            </ondev-tab>
+
+            <ondev-tab name="About us">
+                <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
+            </ondev-tab>
+
+            <ondev-tab name="Contact">
+                <h1>Facere commodi adipisci praesentium.</h1>
+            </ondev-tab>
+        </ondev-tabs>
+
+    </div>
+
+    <script src="dist/js/vue.js"></script>
+    <script src="components/tabs/ondev-tabs/ondev-tabs.js"></script>
+    <script src="components/tabs/ondev-tab/ondev-tab.js"></script>
+
+    <script>
+        new Vue({
+            el: '#root'
+        })
+    </script>
+</body>
+
+</html>
