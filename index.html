@@ -6,12 +6,12 @@
     <title>OnDev Solutions Components</title>
 
     <link rel="stylesheet" href="dist/css/bulma.css">
+    <link rel="stylesheet" href="dist/css/font-awesome.min.css">
 
     <style>
         body {
             padding-top: 30px;
         }
-
     </style>
 
 </head>
@@ -34,11 +34,25 @@
             </ondev-tab>
         </ondev-tabs>
 
+        <br><br><br>
+
+        <ondev-panel>
+            <ondev-panel-block icone="users" :selected="true" name="Usuários">
+                Usuários
+            </ondev-panel-block>
+
+            <ondev-panel-block icone="cogs" name="Configurações">
+                Configurações
+            </ondev-panel-block>
+        </ondev-panel>
+
     </div>
 
     <script src="dist/js/vue.js"></script>
     <script src="components/tabs/ondev-tabs/ondev-tabs.js"></script>
     <script src="components/tabs/ondev-tab/ondev-tab.js"></script>
+    <script src="components/panel/ondev-panel/ondev-panel.js"></script>
+    <script src="components/panel/ondev-panel-block/ondev-panel-block.js"></script>
 
     <script>
         new Vue({
